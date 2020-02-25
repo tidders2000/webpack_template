@@ -1,8 +1,11 @@
 const display = data=>{
 
  const markup = `
+ <ul class="list-group">
  
- <p>Here is the recipie name ${data.title}</p>
+ <li class="list-group-item"> ${data.title} </li>
+
+ </ul>
  
  `;
  document.querySelector('.data').insertAdjacentHTML('beforeend', markup);
