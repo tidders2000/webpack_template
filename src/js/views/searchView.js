@@ -1,18 +1,23 @@
 const display = data=>{
+    
+  
 
  const markup = `
- <ul class="list-group">
- 
- <li class="list-group-item"> ${data.title} </li>
 
- </ul>
+ 
+ <li class='list-group-item reset'  id='${data._id}' > ${data.name}</li>
+
+
  
  `;
- document.querySelector('.data').insertAdjacentHTML('beforeend', markup);
+ document.querySelector('.list-group').insertAdjacentHTML('beforeend', markup);
 };
 
-export const searchResults = (recipies)=>{
-    recipies.forEach(el => {
+
+
+
+export const searchResults = (houses)=>{
+   houses.forEach(el => {
         display(el)
     });
 }

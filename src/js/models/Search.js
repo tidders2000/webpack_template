@@ -8,8 +8,8 @@ export default class searchData{
     }
 async getResults(){
     try{
-        const res =  await axios(`https://forkify-api.herokuapp.com/api/search?&q=${this.query}`)
-        this.result = res.data.recipes
+        const res =  await axios(`https://www.potterapi.com/v1/houses?key=$2a$10$aCRM/xKaf9IV2tmQASF8MeEta7OJmX0R5Naum1tRgcQKSjiM2nuMe`)
+        this.result = res.data
         //console.log(this.result)
        
    
